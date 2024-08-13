@@ -180,7 +180,7 @@ for i = Tr+Gr+1:(Nr/2-(Tr+Gr))
         noise = 0;
         for k = (i-(Tr+Gr)):(i+(Tr+Gr))
             for h = (j-(Td+Gd)):(j+(Td+Gd))
-                if(i-Gr <= k&& k <= i+Gr && j-Gd <= h && h <= j+Gd)
+                if(i-Gr < k&& k < i+Gr && j-Gd < h && h < j+Gd)
                     continue;
                 else
                     noise = db2pow(RDM(k, h)) + noise;
