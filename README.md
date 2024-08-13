@@ -2,7 +2,7 @@
 ## Criteria Fulfillment
  - [x] FMCW Waveform Design
   * Description: Using the given system requirements, design a FMCW waveform. Find its Bandwidth (B), chirp time (Tchirp) and slope of the chirp.
-  * The implementation is from `Line 31 to Line 33`.
+  * Implementation: The implementation is from `Line 31 to Line 33`.
  - [x] Simulation Loop
   * Description: Simulate Target movement and calculate the beat or mixed signal for every timestamp.
   * 
