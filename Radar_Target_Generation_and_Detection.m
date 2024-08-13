@@ -17,7 +17,6 @@ c = 3e8; %speed of light = 3e8
 
 
 %% User Defined Range and Velocity of target
-% *%TODO* :
 % define the target's initial position and velocity. Note : Velocity
 % remains contant
  Rtarget = 100; % m
@@ -26,13 +25,13 @@ c = 3e8; %speed of light = 3e8
 
 %% FMCW Waveform Generation
 
-% *%TODO* :
 %Design the FMCW waveform by giving the specs of each of its parameters.
 % Calculate the Bandwidth (B), Chirp Time (Tchirp) and Slope (slope) of the FMCW
 % chirp using the requirements above.
 B = c / (2 * dres);
 Tchirp = 5.5 * 2 * Rmax / c;
 slope = B / Tchirp;
+% disp(slope); % slope ~= 2e13;
                                                           
 %The number of chirps in one sequence. Its ideal to have 2^ value for the ease of running the FFT
 %for Doppler Estimation. 
